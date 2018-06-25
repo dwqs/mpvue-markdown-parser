@@ -37,7 +37,9 @@
         "ilint": "npx eslint src/**/*.js",
         "fix": "npx eslint --fix src/**/*.js",
         "prepublishOnly": "rm -rf dist && npx webpack --config ./webpack.build.config.js --hide-modules",
+        "postpublish": "mv ./static/index.css ./dist",
         "build": "rm -rf dist && npx webpack --config ./webpack.build.config.js --hide-modules",
+        "postbuild": "mv ./static/index.css ./dist",
         "commitmsg": "npx commitlint -e"
     },
     "devDependencies": {
