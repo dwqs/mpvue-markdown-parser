@@ -1,0 +1,76 @@
+.mpvue-markdown-body {
+  padding: 10px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.mpvue-code-wrap, .mpvue-markdown-h1, .mpvue-markdown-h2, .mpvue-markdown-h3,
+.mpvue-markdown-h4, .mpvue-markdown-h5, .mpvue-markdown-h6, .mpvue-markdown-p,
+.mpvue-markdown-blockquote {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.mpvue-code-wrap {
+  display: block;
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  word-wrap: normal;
+}
+
+.mpvue-markdown-h1, .mpvue-markdown-h2, .mpvue-markdown-h3,
+.mpvue-markdown-h4, .mpvue-markdown-h5, .mpvue-markdown-h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.mpvue-markdown-h1 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.mpvue-markdown-h2 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.mpvue-markdown-h3 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaecef;
+}
+
+.mpvue-markdown-h4 {
+  font-size: 16px;
+}
+
+.mpvue-markdown-h5 {
+  font-size: 14px;
+}
+
+.mpvue-markdown-h6 {
+  font-size: 12px;
+}
+
+.mpvue-markdown-img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.mpvue-markdown-blockquote {
+  padding: 0 16px;
+  color: #6a737d;
+  border-left: 4px solid #dfe2e5;
+}

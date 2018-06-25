@@ -1,0 +1,12 @@
+{
+    "presets": [
+      [
+        "env", {
+          "modules": false,
+          "useBuiltIns": "entry",
+          "loose": true
+        }
+      ],
+      "stage-2"
+    ]
+  }
