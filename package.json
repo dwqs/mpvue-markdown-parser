@@ -37,7 +37,8 @@
         "ilint": "npx eslint src/**/*.js",
         "fix": "npx eslint --fix src/**/*.js",
         "prepublishOnly": "rm -rf dist && npx webpack --config ./webpack.build.config.js --hide-modules",
-        "build": "rm -rf dist && npx webpack --config ./webpack.build.config.js --hide-modules"
+        "build": "rm -rf dist && npx webpack --config ./webpack.build.config.js --hide-modules",
+        "commitmsg": "npx commitlint -e"
     },
     "devDependencies": {
         "@commitlint/cli": "^5.2.8",
