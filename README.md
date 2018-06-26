@@ -4,11 +4,17 @@
 A markdown parser for [mpvue](https://github.com/Meituan-Dianping/mpvue).
 
 ## Preview screenshots
-![image](https://user-images.githubusercontent.com/7871813/41889248-1d536e54-793c-11e8-9614-ee3dd9dd3003.png)
+**Basic render: **
 
-![image](https://user-images.githubusercontent.com/7871813/41889242-16a1661a-793c-11e8-9fba-ce7d865a5ea2.png)
+![image](https://user-images.githubusercontent.com/7871813/41890957-a8bf550e-7944-11e8-95c5-188e480d93ed.png)
 
-![image](https://user-images.githubusercontent.com/7871813/41889252-2509b680-793c-11e8-8d85-2dbff6149e68.png)
+**Code highlight and list:**
+
+![image](https://user-images.githubusercontent.com/7871813/41891003-db5ed8f4-7944-11e8-8409-2a5bedd736e1.png)
+
+**Table and tasks lists:**
+
+![image](https://user-images.githubusercontent.com/7871813/41891028-f7d1896e-7944-11e8-8d86-c05a427c8c05.png)
 
 ## Features
 * Easy to use
