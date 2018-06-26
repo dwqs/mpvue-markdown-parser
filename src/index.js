@@ -35,6 +35,10 @@ renderer.listitem = (text) => {
 };
 
 module.exports = function MpvueMarkdownParser(text) {
+  if (!text || typeof text !== 'string') {
+    return [];
+  }
+  
   marked.setOptions({
     renderer: renderer,
     gfm: true,
