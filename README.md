@@ -56,7 +56,7 @@ yarn add  mpvue-markdown-parser
 </script>
 ```
 
-## Who to use
+## Used By
 * [mpvue-jithub](https://github.com/dwqs/mp-jithub)
 
 ## LICENSE
