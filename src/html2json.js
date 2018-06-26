@@ -15,6 +15,11 @@ function removeDOCTYPE(html) {
     .replace(/<!DOCTYPE.*\>\n/, '');
 }
 
+// rich-text 组件不支持的 html 实体
+const notSupportsHTMLEntities = ['&middot;'];
+// rich-text 组件不支持的 html 标签
+const notSupportsHTMLTags = [];
+
 module.exports = function HTML2JSON(html) {
   html = removeDOCTYPE(html);
 
@@ -119,7 +124,8 @@ module.exports = function HTML2JSON(html) {
     chars: function(text) {
       // 文本节点
       const node = {
-        text: text,
+        // 不支持的 html 实体转为空字符串
+        text: notSupportsHTMLEntities.includes(text.trim()) ? ' ' : text,
         type: 'text'
       };
       if (bufArray.length === 0) {
