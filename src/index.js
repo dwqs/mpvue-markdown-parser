@@ -38,17 +38,20 @@ module.exports = function MpvueMarkdownParser(text) {
   if (!text || typeof text !== 'string') {
     return [];
   }
-  
+
   marked.setOptions({
     renderer: renderer,
     gfm: true,
     tables: true,
     breaks: true,
     pedantic: false,
-    sanitize: false,
+    sanitize: true,
     smartLists: true,
     smartypants: false
   });
 
-  return HTML2JSON(marked(text));
+  // 如果markdown中有html片段，会产生一些转义： https://github.com/markedjs/marked/issues/779
+  const htmlText = marked(text).replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '');
+  
+  return HTML2JSON(htmlText);
 };
