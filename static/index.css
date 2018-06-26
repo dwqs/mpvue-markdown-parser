@@ -186,7 +186,7 @@
   background-color: #f6f8fa;
 }
 
-// task list
+/* task list */
 .mpvue-markdown-body .task-list-item {
   list-style-type: none;
 }
