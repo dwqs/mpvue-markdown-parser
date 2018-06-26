@@ -4,7 +4,7 @@
 A markdown parser for [mpvue](https://github.com/Meituan-Dianping/mpvue).
 
 ## Preview screenshots
-**Basic render: **
+**Basic render:**
 
 ![image](https://user-images.githubusercontent.com/7871813/41890957-a8bf550e-7944-11e8-95c5-188e480d93ed.png)
 
@@ -17,10 +17,10 @@ A markdown parser for [mpvue](https://github.com/Meituan-Dianping/mpvue).
 ![image](https://user-images.githubusercontent.com/7871813/41891028-f7d1896e-7944-11e8-8d86-c05a427c8c05.png)
 
 ## Features
-* Easy to use
-* Supports code highlight, [tasks list](https://blog.github.com/2014-04-28-task-lists-in-all-markdown-documents/), etc.
-* Powered by native component(`rich-text`)
-* Better Performance
+1. Easy to use
+2. Supports code highlight, [tasks list](https://blog.github.com/2014-04-28-task-lists-in-all-markdown-documents/), etc.
+3. Powered by native component(`rich-text`)
+4. Better Performance
 
 ## Installation
 
@@ -55,6 +55,9 @@ yarn add  mpvue-markdown-parser
   }
 </script>
 ```
+
+## Who to use
+* [mpvue-jithub](https://github.com/dwqs/mp-jithub)
 
 ## LICENSE
 MIT
