@@ -21,6 +21,19 @@ renderer.code = (code, language) => {
   return `<code class="mpvue-code-wrap">${Prism.highlight(code, lang)}</code>`;
 };
 
+// 支持 task-lists: https://blog.github.com/2014-04-28-task-lists-in-all-markdown-documents/
+renderer.listitem = (text) => {
+  if (/^\s*\[[x ]\]\s*/.test(text)) {
+    text = text
+      .replace(/^\s*\[ \]\s*/, '<i class="mpvue-checkbox-icon empty"></i> ')
+      .replace(/^\s*\[x\]\s*/, '<i class="mpvue-checkbox-icon checked"></i> ');
+    
+    return `<li class="task-list-item">${text}</li>`;
+  } else {
+    return `<li>${text}</li>`;
+  }
+};
+
 module.exports = function MpvueMarkdownParser(text) {
   marked.setOptions({
     renderer: renderer,
