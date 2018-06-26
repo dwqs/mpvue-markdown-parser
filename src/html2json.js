@@ -45,6 +45,11 @@ module.exports = function HTML2JSON(html) {
           if (value.match(/ /)) {
             value = value.split(' ');
           }
+          
+          // 所有属性值转为字符串
+          if (typeof value !== 'string') {
+            value = typeof value.join === 'function' ? value.join(' ') : String(value);
+          }
 
           // if attr already exists
           // merge it
