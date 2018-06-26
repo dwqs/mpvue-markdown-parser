@@ -4,7 +4,7 @@
 A markdown parser for [mpvue](https://github.com/Meituan-Dianping/mpvue).
 
 ## Preview screenshots
-**Basic render: **
+**Basic render:**
 
 ![image](https://user-images.githubusercontent.com/7871813/41890957-a8bf550e-7944-11e8-95c5-188e480d93ed.png)
 
