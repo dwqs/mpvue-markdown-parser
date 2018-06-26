@@ -1,9 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: {
     index: path.resolve(__dirname, './src/index')
   },
@@ -17,18 +15,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        type: 'javascript/auto',
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.(less|css)$/,
-        type: 'javascript/auto',
-        loaders: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'less-loader'
-        ]
       }
     ]
   },
@@ -39,9 +27,6 @@ module.exports = {
   },
   
   plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
-    })
+    new webpack.optimize.ModuleConcatenationPlugin()
   ]
 };
