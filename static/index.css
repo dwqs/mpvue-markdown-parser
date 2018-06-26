@@ -12,7 +12,8 @@
 
 .mpvue-code-wrap, .mpvue-markdown-h1, .mpvue-markdown-h2, .mpvue-markdown-h3,
 .mpvue-markdown-h4, .mpvue-markdown-h5, .mpvue-markdown-h6, .mpvue-markdown-p,
-.mpvue-markdown-blockquote {
+.mpvue-markdown-blockquote, .mpvue-markdown-ul, .mpvue-markdown-ol,
+.mpvue-markdown-dl, .mpvue-markdown-table {
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -25,6 +26,13 @@
   background-color: #f7f7f7;
   border-radius: 3px;
   word-wrap: normal;
+  white-space: pre-wrap
+}
+
+.mpvue-markdown-code {
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+  padding: 4px 6px;
 }
 
 .mpvue-markdown-h1, .mpvue-markdown-h2, .mpvue-markdown-h3,
@@ -67,10 +75,149 @@
   max-width: 100%;
   box-sizing: content-box;
   background-color: #fff;
+  border-style: none;
 }
 
 .mpvue-markdown-blockquote {
   padding: 0 16px;
   color: #6a737d;
   border-left: 4px solid #dfe2e5;
+}
+
+.mpvue-markdown-input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+  margin: 0
+}
+
+.mpvue-markdown-input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.mpvue-markdown-a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.mpvue-markdown-hr {
+  height: 4px;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.mpvue-markdown-strong {
+  font-weight: bolder;
+}
+
+.mpvue-markdown-ul, .mpvue-markdown-ol {
+  padding-left: 32px;
+}
+
+.mpvue-markdown-ul .mpvue-markdown-ul,
+.mpvue-markdown-ul .mpvue-markdown-ol,
+.mpvue-markdown-ol .mpvue-markdown-ol,
+.mpvue-markdown-ol .mpvue-markdown-ul {
+  margin-top: 0;
+  margin-bottom: 0
+}
+
+.mpvue-markdown-ul .mpvue-markdown-ol,
+.mpvue-markdown-ol .mpvue-markdown-ol {
+  list-style-type: lower-roman;
+}
+
+.mpvue-markdown-ul .mpvue-markdown-ul .mpvue-markdown-ol,
+.mpvue-markdown-ul .mpvue-markdown-ol .mpvue-markdown-ol,
+.mpvue-markdown-ol .mpvue-markdown-ul .mpvue-markdown-ol,
+.mpvue-markdown-ol .mpvue-markdown-ol .mpvue-markdown-ol {
+  list-style-type: lower-alpha;
+} 
+
+.mpvue-markdown-li {
+  word-wrap: break-all;
+}
+
+.mpvue-markdown-dl {
+  padding: 0;
+}
+
+.mpvue-markdown-dl .mpvue-markdown-dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.mpvue-markdown-dl .mpvue-markdown-dt .mpvue-markdown-dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.mpvue-markdown-table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.mpvue-markdown-table .mpvue-markdown-th {
+  font-weight: 600;
+}
+
+.mpvue-markdown-table .mpvue-markdown-th,
+.mpvue-markdown-table .mpvue-markdown-td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.mpvue-markdown-table .mpvue-markdown-tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;    
+}
+
+.mpvue-markdown-table  .mpvue-markdown-tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+// task list
+.mpvue-markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.mpvue-markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.mpvue-checkbox-icon {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+  margin: 0 2px 4px -25px;
+}
+
+.mpvue-checkbox-icon.checked::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 3px;
+  height: 6px;
+  width: 3px;
+  border: 2px solid #a1a1a1;
+  border-left: 0;
+  border-top: 0;
+  border-radius: 3px;
+  transform-origin: center;
+  transform: rotate(45deg);
 }
