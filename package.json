@@ -1,6 +1,6 @@
 {
     "name": "mpvue-markdown-parser",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "description": "A markdown parser for mpvue",
     "author": "dwqs",
     "license": "MIT",
